@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download Score808 LiveScore App — Skor Langsung & Jadwal Pertandingan</title>
+  <meta name="description" content="Unduh Score808 LiveScore App untuk skor langsung, jadwal, hasil, dan notifikasi pertandingan. Ringan, cepat, dan aman." />
+  <link rel="canonical" href="https://app.score808.my.id" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- JSON-LD: SoftwareApplication (SEO-friendly) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Score808 LiveScore App",
+    "operatingSystem":["ANDROID","iOS"],
+    "applicationCategory":"SportsApplication",
+    "aggregateRating": {
+      "@type":"AggregateRating",
+      "ratingValue":"4.6",
+      "reviewCount":"1245"
+    },
+    "offers": {
+      "@type":"Offer",
+      "price":"0",
+      "priceCurrency":"IDR"
+    },
+    "url":"https://app.score808.my.id"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1724;
+      --muted:#9aa6b2;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color-scheme: dark;
+    }
+    /* Basic reset */
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#071021); color:#e6eef6}
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; height:auto; display:block}
+    .container{max-width:980px; margin:28px auto; padding:20px}
+
+    /* Header */
+    header{display:flex; gap:16px; align-items:center; margin-bottom:18px}
+    .brand{
+      display:flex; align-items:center; gap:12px;
+    }
+    .logo{
+      width:56px; height:56px; display:grid; place-items:center;
+      background:linear-gradient(135deg,#052230,#073a4a);
+      border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+      flex-shrink:0;
+    }
+    .logo svg{width:36px; height:36px}
+    h1{font-size:20px; margin:0}
+    p.lead{color:var(--muted); margin:4px 0 0; font-size:14px}
+
+    /* Hero / card */
+    .hero{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:16px;
+      margin-top:12px;
+    }
+    @media(min-width:820px){ .hero{grid-template-columns: 1fr 360px} }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+    }
+
+    .features{display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
+    .feature{flex:1 1 140px; min-width:140px; background:var(--glass); padding:10px; border-radius:10px}
+    .feature h4{margin:0 0 6px; font-size:14px}
+    .feature p{margin:0; color:var(--muted); font-size:13px}
+
+    /* Download actions */
+    .download{
+      display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;
+    }
+    .btn-store{
+      display:inline-flex; gap:10px; align-items:center; padding:10px 14px;
+      border-radius:12px; background:linear-gradient(90deg,#0b1320,#0f1b2a); box-shadow: inset 0 -1px 0 rgba(255,255,255,0.02);
+      border:1px solid rgba(255,255,255,0.03);
+      min-height:48px; min-width:170px;
+    }
+    .btn-store svg{width:28px; height:28px}
+    .btn-text{display:flex; flex-direction:column; line-height:1;}
+    .btn-text small{font-size:11px; color:var(--muted)}
+    .btn-text strong{font-size:15px}
+
+    /* Screenshot column */
+    .phone-card{display:flex; flex-direction:column; gap:12px; align-items:center}
+    .phone{
+      width:100%; max-width:320px; border-radius:22px; padding:12px; background:
+      linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 14px 40px rgba(1,6,20,0.6);
+      position:relative;
+    }
+    .screen{
+      height:560px; border-radius:14px; overflow:hidden; background:#071427; display:grid; place-items:center;
+      padding:12px;
+    }
+
+    /* Simple CSS carousel (no JS) */
+    .carousel{
+      width:100%; height:100%;
+      display:grid; grid-auto-flow:column; grid-auto-columns:100%;
+      scroll-snap-type: x mandatory; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    }
+    .carousel > figure{
+      scroll-snap-align:center; margin:0; padding:16px; min-width:100%;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .screenshot{
+      width:100%; max-width:280px; border-radius:12px; box-shadow: 0 8px 30px rgba(2,6,20,0.7); border:1px solid rgba(255,255,255,0.02);
+    }
+    .note{font-size:12px; color:var(--muted); text-align:center}
+
+    /* Badges / smaller section */
+    .meta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:12px}
+    .meta{background:rgba(255,255,255,0.02); padding:8px 10px; border-radius:8px; color:var(--muted); font-size:13px}
+
+    /* More sections */
+    section h2{font-size:16px; margin:14px 0 6px}
+    .two-col{display:grid; gap:12px}
+    @media(min-width:780px){ .two-col{grid-template-columns:1fr 320px} }
+
+    .faq dt{font-weight:600; margin-top:10px}
+    .faq dd{margin:6px 0 10px; color:var(--muted)}
+
+    footer{margin-top:20px; color:var(--muted); font-size:13px; text-align:center}
+
+    /* Accessibility focus */
+    a:focus, button:focus{outline:3px solid rgba(6,182,212,0.16); outline-offset:2px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- simple ball + tick logo -->
+          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="url(#g)"/>
+            <path d="M22 34l6 6 14-18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#0ea5a3"/></linearGradient></defs>
+          </svg>
+        </div>
+        <div>
+          <h1>LiveScore App</h1>
+          <p class="lead">Skor langsung, jadwal, dan notifikasi pertandingan — cepat & hemat kuota.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="hero">
+      <!-- Left: info -->
+      <div class="card" role="main" aria-labelledby="title">
+        <h2 id="title">Unduh aplikasi LiveScore</h2>
+        <p class="note">Dapatkan pembaruan skor real-time, statistik, dan pengingat pertandingan favorit.</p>
+
+        <div class="features" aria-hidden="false">
+          <div class="feature">
+            <h4>Skor real-time</h4>
+            <p>Update skor pertandingan tanpa delay, perfect untuk nonton bareng.</p>
+          </div>
+          <div class="feature">
+            <h4>Notifikasi match</h4>
+            <p>Atur pengingat untuk tim atau liga favorit Anda.</p>
+          </div>
+          <div class="feature">
+            <h4>Ringan & cepat</h4>
+            <p>Desain hemat data, cocok untuk koneksi seluler.</p>
+          </div>
+        </div>
+
+        <div class="download" aria-label="Tombol unduh">
+          <!-- Play Store -->
+          <a class="btn-store" href="https://skor.candil.eu.org/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#fff" d="M2 2v20l20-10L2 2z"></path>
+            </svg>
+            <div class="btn-text">
+              <small>Lihat di</small>
+              <strong>Versi 1</strong>
+            </div>
+          </a>
+
+          <!-- App Store -->
+          <a class="btn-store" href="https://score808.candil.eu.org/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#fff" d="M16.24 6.56A6.39 6.39 0 0018 4c-1.1.02-2.56.74-3.36 1.66-.8.92-1.47 2.43-1.22 3.84 1.46.12 2.88-.74 2.82-3z"></path>
+              <path fill="#fff" d="M12 22c1.1 0 2.39-.34 3.54-.74C17.9 20.2 20 17.8 20 14.8c0-4.1-3-7.6-7.15-7.6-2.06 0-3.9.94-5.2 2.46C6.1 10.2 6 11.1 6 12c0 4 3.5 8 6 10z"></path>
+            </svg>
+            <div class="btn-text">
+              <small>Lihat di</small>
+              <strong>Versi 2</strong>
+            </div>
+          </a>
+        </div>
+
+        <div class="meta-row" aria-hidden="true">
+          <div class="meta">Ukuran: ~18 MB</div>
+          <div class="meta">Versi: 3.2.1</div>
+          <div class="meta">Kategori: Olahraga</div>
+        </div>
+
+        <section>
+          <h2>Kenapa pilih LiveScore?</h2>
+          <p style="color:var(--muted)">Aplikasi dibuat fokus pada kecepatan dan kemudahan: timeline pertandingan, statistik pemain, dan ringkasan menit-per-menit.</p>
+        </section>
+
+        <section class="two-col" aria-labelledby="more">
+          <div>
+            <h2 id="more">Fitur utama</h2>
+            <ul style="color:var(--muted); margin-top:8px; padding-left:18px">
+              <li>Notifikasi kickoff & gol</li>
+              <li>Statistik lengkap tim & pemain</li>
+              <li>Filter berdasarkan liga dan tanggal</li>
+              <li>Mode hemat data</li>
+            </ul>
+          </div>
+
+          <aside class="card" style="background:transparent; padding:10px;">
+            <h2>Persyaratan</h2>
+            <p style="color:var(--muted); margin:6px 0 0">Android 6.0+ / iOS 13+ — Perlu koneksi internet untuk update skor.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>FAQ</h2>
+          <dl class="faq">
+            <dt>Aplikasi ini berbayar?</dt>
+            <dd>Tidak. Aplikasi gratis dengan iklan ringan. Ada opsi langganan bebas iklan.</dd>
+
+            <dt>Bagaimana keamanan data saya?</dt>
+            <dd>Kami hanya menyimpan preferensi pengguna. Untuk informasi detail, lihat Privacy Policy di footer.</dd>
+          </dl>
+        </section>
+      </div>
+
+      <!-- Right: phone screenshot -->
+      <div class="phone-card">
+        <div class="phone card" aria-hidden="false" role="region" aria-label="Tampilan aplikasi">
+          <div class="screen" role="img" aria-label="Tangkapan layar aplikasi">
+            <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Screenshot aplikasi">
+              <!-- Replace SVGs below with real screenshots (use <img src="..."> and proper alt text) -->
+              <figure>
+                <img class="screenshot" src="data:image/svg+xml;utf8,
+                  <svg xmlns='http://www.w3.org/2000/svg' width='720' height='1280'>
+                    <rect width='100%' height='100%' fill='%23071a2a'/>
+                    <text x='50%' y='50%' fill='%23ffffff' font-size='36' font-family='Arial' text-anchor='middle'>Screenshot 1</text>
+                  </svg>" alt="Tangkapan layar: jadwal pertandingan" loading="lazy">
+              </figure>
+              <figure>
+                <img class="screenshot" src="data:image/svg+xml;utf8,
+                  <svg xmlns='http://www.w3.org/2000/svg' width='720' height='1280'>
+                    <rect width='100%' height='100%' fill='%230b1f2e'/>
+                    <text x='50%' y='50%' fill='%23ffffff' font-size='36' font-family='Arial' text-anchor='middle'>Screenshot 2</text>
+                  </svg>" alt="Tangkapan layar: skor langsung" loading="lazy">
+              </figure>
+            </div>
+          </div>
+          <div class="note">Geser untuk melihat screenshot • Tombol di atas menuju ke toko resmi</div>
+        </div>
+
+        <div class="card" style="text-align:center;">
+          <strong>Update terakhir</strong>
+          <div style="color:var(--muted); margin-top:6px">7 Desember 2025 • Perbaikan notifikasi & performa</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span>Score808 LiveScore App — <a href="/privacy" rel="noopener">Privacy Policy</a> • <a href="/terms" rel="noopener">Terms</a></p>
+    </footer>
+  </div>
+
+  <script>
+    // small script only for year injection and progressive enhancement (safe)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
