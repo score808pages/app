@@ -1,358 +1,241 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <!-- Meta Basic -->
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Score808 LiveScore App — Skor Langsung, Jadwal & Notifikasi Pertandingan</title>
-<meta name="description" content="Download aplikasi Score808 LiveScore untuk skor langsung, jadwal pertandingan, hasil terbaru, statistik, dan notifikasi real-time. Ringan, cepat, aman, dan bebas gangguan." />
-<link rel="canonical" href="https://app.score808.my.id/" />
-<meta name="robots" content="index, follow" />
-<meta name="referrer" content="origin-when-cross-origin" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="theme-color" content="#0f172a" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Score808 LiveScore App — Skor Langsung & Jadwal</title>
 
-<!-- SEO Enhancement -->
-<meta name="keywords" content="score808, livescore app, download score808, skor langsung hari ini, livescore apk, jadwal bola, aplikasi skor bola, live score app" />
-<meta name="author" content="Score808 Team" />
-<meta name="rating" content="general" />
-<meta name="language" content="id" />
-<meta name="distribution" content="global" />
-<meta name="coverage" content="worldwide" />
+<meta name="description" content="Lihat aplikasi Score808 LiveScore untuk skor langsung, jadwal bola, hasil pertandingan, statistik, dan notifikasi real-time. Ringan, cepat, dan gratis.">
+<link rel="canonical" href="https://app.score808.my.id/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0f172a">
 
-<!-- Open Graph (Facebook / WhatsApp / Instagram / Messenger) -->
-<meta property="og:title" content="Download Score808 LiveScore App — Skor Langsung & Jadwal Pertandingan" />
-<meta property="og:description" content="Dapatkan skor langsung, jadwal bola, statistik, dan notifikasi pertandingan dalam satu aplikasi ringan dan cepat." />
-<meta property="og:url" content="https://app.score808.my.id/" />
-<meta property="og:site_name" content="Score808 LiveScore" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUIo1zWVJEpFrPpyy5rqH522v1F4FjGTTkFcX5h2BwMBQ1P7szB3YxrwoUCcUvmJKjnJl_xulFSNs-SBzSYcpoM3d-EohjORzZZpt91NIFRK21R6Tc-fp-0q_prLauW3Rd3pInbO8j3Ug7EzVyHsFEfOfcfOxOgm6FwBFd27FEJnQUSv1ndEVLjnCayg/s1600/score808indonesia.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Score808 LiveScore App" />
+<!-- Open Graph -->
+<meta property="og:title" content="Score808 LiveScore App">
+<meta property="og:description" content="Pantau skor langsung, jadwal, dan statistik pertandingan favoritmu tanpa delay.">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUIo1zWVJEpFrPpyy5rqH522v1F4FjGTTkFcX5h2BwMBQ1P7szB3YxrwoUCcUvmJKjnJl_xulFSNs-SBzSYcpoM3d-EohjORzZZpt91NIFRK21R6Tc-fp-0q_prLauW3Rd3pInbO8j3Ug7EzVyHsFEfOfcfOxOgm6FwBFd27FEJnQUSv1ndEVLjnCayg/s1600/score808indonesia.png">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Download Score808 LiveScore App — Skor Langsung & Jadwal Pertandingan" />
-<meta name="twitter:description" content="Aplikasi skor langsung paling cepat dan ringan. Pantau setiap pertandingan tanpa delay." />
-<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUIo1zWVJEpFrPpyy5rqH522v1F4FjGTTkFcX5h2BwMBQ1P7szB3YxrwoUCcUvmJKjnJl_xulFSNs-SBzSYcpoM3d-EohjORzZZpt91NIFRK21R6Tc-fp-0q_prLauW3Rd3pInbO8j3Ug7EzVyHsFEfOfcfOxOgm6FwBFd27FEJnQUSv1ndEVLjnCayg/s1600/score808indonesia.png" />
-<meta name="twitter:site" content="@score808" />
+<!-- Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- PWA (Optional) -->
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/score808pages/app@main/favicon.ico" />
- <link href='https://cdn.jsdelivr.net/gh/score808pages/app@main/favicon.ico' rel='icon' type='image/x-icon'/>
-  
-<!-- Preload Performance (Super Fast Load) -->
-<link rel="preconnect" href="https://app.score808.my.id" />
-<link rel="dns-prefetch" href="https://app.score808.my.id" />
+<style>
+:root{
+  --bg:#0b1220;
+  --card:#0f172a;
+  --accent:#22c55e;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --radius:14px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui;
+  background:linear-gradient(180deg,#020617,#020617 60%,#020617);
+  color:var(--text);
+}
+a{text-decoration:none;color:inherit}
 
-<!-- Security Headers (HTML Level) -->
-<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-<meta name="yandex-verification" content="866d754b01fbe97f" />
+/* ===== Header App Style ===== */
+.app-header{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  padding:16px;
+}
+.app-icon{
+  width:72px;
+  height:72px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#06b6d4,#0ea5a3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  font-size:22px;
+}
+.app-info h1{
+  margin:0;
+  font-size:20px;
+}
+.app-info p{
+  margin:6px 0 0;
+  font-size:14px;
+  color:var(--muted);
+}
 
-  <!-- JSON-LD: SoftwareApplication (SEO-friendly) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"SoftwareApplication",
-    "name":"Score808 LiveScore App",
-    "operatingSystem":["ANDROID","iOS"],
-    "applicationCategory":"SportsApplication",
-    "aggregateRating": {
-      "@type":"AggregateRating",
-      "ratingValue":"4.6",
-      "reviewCount":"1245"
-    },
-    "offers": {
-      "@type":"Offer",
-      "price":"0",
-      "priceCurrency":"IDR"
-    },
-    "url":"https://app.score808.my.id"
-  }
-  </script>
+/* Rating */
+.rating{
+  display:flex;
+  gap:14px;
+  margin-top:10px;
+  font-size:13px;
+}
+.rating span{
+  color:#facc15;
+}
 
-  <style>
-    :root{
-      --bg:#0b1220;
-      --card:#0f1724;
-      --muted:#9aa6b2;
-      --accent:#06b6d4;
-      --glass: rgba(255,255,255,0.03);
-      --radius:14px;
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      color-scheme: dark;
-    }
-    /* Basic reset */
-    *{box-sizing:border-box}
-    html,body{height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#071021); color:#e6eef6}
-    a{color:#ff0000; text-decoration:none}
-    img{max-width:100%; height:auto; display:block}
-    .container{max-width:980px; margin:28px auto; padding:20px}
-
-    /* Header */
-    header{display:flex; gap:16px; align-items:center; margin-bottom:18px}
-    .brand{
-      display:flex; align-items:center; gap:12px;
-    }
-    .logo{
-      width:56px; height:56px; display:grid; place-items:center;
-      background:linear-gradient(135deg,#052230,#073a4a);
-      border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-      flex-shrink:0;
-    }
-    .logo svg{width:36px; height:36px}
-    h1{font-size:20px; margin:0}
-    p.lead{color:var(--muted); margin:4px 0 0; font-size:16px}
-
-    /* Hero / card */
-    .hero{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:16px;
-      margin-top:12px;
-    }
-    @media(min-width:820px){ .hero{grid-template-columns: 1fr 360px} }
-
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border-radius:var(--radius);
-      padding:16px;
-      box-shadow: 0 8px 24px rgba(2,6,23,0.6);
-    }
-
-    .features{display:flex; flex-wrap:wrap; gap:12px; margin-top:12px}
-    .feature{flex:1 1 140px; min-width:140px; background:var(--glass); padding:10px; border-radius:10px}
-    .feature h4{margin:0 0 6px; font-size:16px}
-    .feature p{margin:0; color:var(--muted); font-size:15px}
-
-    /* Download actions */
-    .download{
-      display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;
-    }
-    .btn-store{
-      display:inline-flex; gap:10px; align-items:center; padding:10px 14px;
-      border-radius:12px; background:linear-gradient(90deg,#0b1320,#0f1b2a); box-shadow: inset 0 -1px 0 rgba(255,255,255,0.02);
-      border:1px solid rgba(255,255,255,0.03);
-      min-height:48px; min-width:170px;
-    }
-    .btn-store svg{width:28px; height:28px}
-    .btn-text{display:flex; flex-direction:column; line-height:1;}
-    .btn-text small{font-size:14px; color:var(--muted)}
-    .btn-text strong{font-size:16px}
-
-    /* Screenshot column */
-    .phone-card{display:flex; flex-direction:column; gap:12px; align-items:center}
-    .phone{
-      width:100%; max-width:320px; border-radius:22px; padding:12px; background:
-      linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      border:1px solid rgba(255,255,255,0.03);
-      box-shadow: 0 14px 40px rgba(1,6,20,0.6);
-      position:relative;
-    }
-    .screen{
-      height:560px; border-radius:14px; overflow:hidden; background:#071427; display:grid; place-items:center;
-      padding:12px;
-    }
-
-    /* Simple CSS carousel (no JS) */
-    .carousel{
-      width:100%; height:100%;
-      display:grid; grid-auto-flow:column; grid-auto-columns:100%;
-      scroll-snap-type: x mandatory; overflow-x:auto; -webkit-overflow-scrolling:touch;
-    }
-    .carousel > figure{
-      scroll-snap-align:center; margin:0; padding:16px; min-width:100%;
-      display:flex; align-items:center; justify-content:center;
-    }
-    .screenshot{
-      width:100%; max-width:280px; border-radius:12px; box-shadow: 0 8px 30px rgba(2,6,20,0.7); border:1px solid rgba(255,255,255,0.02);
-    }
-    .note{font-size:12px; color:var(--muted); text-align:center}
-
-    /* Badges / smaller section */
-    .meta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:12px}
-    .meta{background:rgba(255,255,255,0.02); padding:8px 10px; border-radius:8px; color:var(--muted); font-size:14px}
-
-    /* More sections */
-    section h2{font-size:17px; margin:14px 0 6px}
-    .two-col{display:grid; gap:12px}
-    @media(min-width:780px){ .two-col{grid-template-columns:1fr 320px} }
-
-    .faq dt{font-weight:600; margin-top:10px}
-    .faq dd{margin:6px 0 10px; color:var(--muted)}
-
-    footer{margin-top:20px; color:var(--muted); font-size:14px; text-align:center}
-
-    /* Accessibility focus */
-    a:focus, button:focus{outline:3px solid rgba(6,182,212,0.16); outline-offset:2px}
-  .ads-wrapper{
-  width:100%;
-  margin:18px auto;
-  padding:12px;
-  background:#020617;
+/* ===== Screenshot ===== */
+.screenshots{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  padding:10px 16px;
+}
+.screenshots img{
+  height:260px;
   border-radius:14px;
-  box-shadow:0 10px 25px rgba(0,0,0,.25);
+  border:1px solid rgba(255,255,255,.08);
 }
-.ads-label{
-  display:block;
+
+/* ===== Card Section ===== */
+.section{
+  padding:16px;
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:16px;
+}
+.section h2{
+  font-size:16px;
+  margin:0 0 8px;
+}
+.section p, li{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.6;
+}
+
+/* ===== Info Grid ===== */
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
   text-align:center;
-  font-size:11px;
-  color:#94a3b8;
-  margin-bottom:6px;
-  letter-spacing:.5px;
+  gap:10px;
+  margin-top:12px;
 }
-  </style>
+.info-grid div{
+  background:#020617;
+  padding:10px;
+  border-radius:12px;
+  font-size:13px;
+}
+
+/* ===== Floating CTA ===== */
+.floating-cta{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  background:linear-gradient(180deg,transparent,#020617 40%);
+  padding:14px;
+  z-index:99;
+}
+.cta-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  background:var(--accent);
+  color:#022c22;
+  padding:14px;
+  border-radius:14px;
+  font-weight:700;
+  font-size:16px;
+  box-shadow:0 10px 30px rgba(34,197,94,.4);
+}
+.cta-btn svg{
+  width:22px;
+  height:22px;
+}
+.footer-space{
+  height:90px;
+}
+</style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264483052991753" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <!-- simple ball + tick logo -->
-          <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="32" cy="32" r="30" fill="url(#g)"/>
-            <path d="M22 34l6 6 14-18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#06b6d4"/><stop offset="1" stop-color="#0ea5a3"/></linearGradient></defs>
-          </svg>
-        </div>
-        <div>
-          <h1>Score808 LiveScore App</h1>
-          <p class="lead">Skor langsung, jadwal, dan notifikasi pertandingan — cepat & hemat kuota.</p>
-        </div>
-      </div>
-    </header>
 
-    <main class="hero">
-      <!-- Left: info -->
-      <div class="card" role="main" aria-labelledby="title">
-        <h2 id="title">Lihat aplikasi Score808 LiveScore</h2>
-        <p class="note">Dapatkan pembaruan skor real-time, statistik, dan pengingat pertandingan favorit.</p>
-        
-        <div class="features" aria-hidden="false">
-          <div class="feature">
-            <h4>Skor real-time</h4>
-            <p>Update skor pertandingan tanpa delay, perfect untuk nonton bareng.</p>
-          </div>
-          <div class="feature">
-            <h4>Notifikasi match</h4>
-            <p>Atur pengingat untuk tim atau liga favorit Anda.</p>
-          </div>
-          <div class="feature">
-            <h4>Ringan & cepat</h4>
-            <p>Desain hemat data, cocok untuk koneksi seluler.</p>
-          </div>
-        </div>
-
-        <div class="download" aria-label="Tombol unduh">
-          <!-- Play Store -->
-          <a class="btn-store" href="https://news.score808.my.id/p/link.html" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="#ff0000" d="M2 2v20l20-10L2 2z"></path>
-            </svg>
-            <div class="btn-text">
-              <small>Langsung di</small>
-              <strong>Versi 1</strong>
-            </div>
-          </a>
-
-          <!-- App Store -->
-          <a class="btn-store" href="https://skor.beritanasional.eu.org/" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path fill="#ff0000" d="M16.24 6.56A6.39 6.39 0 0018 4c-1.1.02-2.56.74-3.36 1.66-.8.92-1.47 2.43-1.22 3.84 1.46.12 2.88-.74 2.82-3z"></path>
-              <path fill="#ff0000" d="M12 22c1.1 0 2.39-.34 3.54-.74C17.9 20.2 20 17.8 20 14.8c0-4.1-3-7.6-7.15-7.6-2.06 0-3.9.94-5.2 2.46C6.1 10.2 6 11.1 6 12c0 4 3.5 8 6 10z"></path>
-            </svg>
-            <div class="btn-text">
-              <small>Langsung di</small>
-              <strong>Versi 2</strong>
-            </div>
-          </a>
-        </div>
-
-        <div class="meta-row" aria-hidden="true">
-          <div class="meta">Ukuran: ~18 MB</div>
-          <div class="meta">Versi: 3.2.1</div>
-          <div class="meta">Kategori: Olahraga</div>
-        </div>
-
-        <section>
-          <h2>Kenapa pilih Score808 LiveScore?</h2>
-          <p style="color:var(--muted)">Aplikasi dibuat fokus pada kecepatan dan kemudahan: timeline pertandingan, statistik pemain, dan ringkasan menit-per-menit.</p>
-        </section>
-
-        <section class="two-col" aria-labelledby="more">
-          <div>
-            <h2 id="more">Fitur utama</h2>
-            <ul style="color:var(--muted); margin-top:8px; padding-left:18px">
-              <li>Notifikasi kickoff & gol</li>
-              <li>Statistik lengkap tim & pemain</li>
-              <li>Filter berdasarkan liga dan tanggal</li>
-              <li>Mode hemat data</li>
-            </ul>
-          </div>
-
-          <aside class="card" style="background:transparent; padding:10px;">
-            <h2>Persyaratan</h2>
-            <p style="color:var(--muted); margin:6px 0 0">Android 6.0+ / iOS 13+ — Perlu koneksi internet untuk update skor.</p>
-          </aside>
-        </section>
-
-        <section>
-          <h2>FAQ</h2>
-          <dl class="faq">
-            <dt>Aplikasi ini berbayar?</dt>
-            <dd>Tidak. Aplikasi gratis dengan iklan ringan. Ada opsi langganan bebas iklan.</dd>
-
-            <dt>Bagaimana keamanan data saya?</dt>
-            <dd>Kami hanya menyimpan preferensi pengguna. Untuk informasi detail, lihat Privacy Policy di footer.</dd>
-          </dl>
-        </section>
-      </div>
-
-      <!-- Right: phone screenshot -->
-      <div class="phone-card">
-        <div class="phone card" aria-hidden="false" role="region" aria-label="Tampilan aplikasi">
-          <div class="screen" role="img" aria-label="Tangkapan layar aplikasi">
-            <div class="carousel" tabindex="0" aria-roledescription="carousel" aria-label="Screenshot aplikasi">
-              <!-- Replace SVGs below with real screenshots (use <img src="..."> and proper alt text) -->
-              <figure>
-                <img class="screenshot" src="data:image/svg+xml;utf8,
-                  <svg xmlns='http://www.w3.org/2000/svg' width='720' height='1280'>
-                    <rect width='100%' height='100%' fill='%23071a2a'/>
-                    <text x='50%' y='50%' fill='%23ffffff' font-size='36' font-family='Arial' text-anchor='middle'>Score808 1</text>
-                  </svg>" alt="Tangkapan layar: jadwal pertandingan" loading="lazy">
-              </figure>
-              <figure>
-                <img class="screenshot" src="data:image/svg+xml;utf8,
-                  <svg xmlns='http://www.w3.org/2000/svg' width='720' height='1280'>
-                    <rect width='100%' height='100%' fill='%230b1f2e'/>
-                    <text x='50%' y='50%' fill='%23ffffff' font-size='36' font-family='Arial' text-anchor='middle'>Score 808 2</text>
-                  </svg>" alt="Tangkapan layar: skor langsung" loading="lazy">
-              </figure>
-            </div>
-          </div>
-          <div class="note">Geser untuk melihat screenshot • Tombol di atas menuju ke toko resmi</div>
-        </div>
-
-        <div class="card" style="text-align:center;">
-          <strong>Update terakhir</strong>
-          <div style="color:var(--muted); margin-top:6px">7 Desember 2025 • Perbaikan notifikasi & performa</div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <p>© <span id="year"></span> Score808 LiveScore App — <a href="https://news.score808.my.id/p/kebijakan-privasi-score808-news.html" rel="noopener">Privacy Policy</a> • <a href="https://news.score808.my.id/p/ketentuan-penggunaan-terms-of-service.html" rel="noopener">Terms</a></p>
-    </footer>
+<!-- HEADER -->
+<div class="app-header">
+  <div class="app-icon">808</div>
+  <div class="app-info">
+    <h1>Score808 LiveScore</h1>
+    <p>Skor langsung, jadwal & notifikasi pertandingan</p>
+    <div class="rating">
+      <div><span>★ 4.6</span></div>
+      <div>1.200+ ulasan</div>
+      <div>Gratis</div>
+    </div>
   </div>
+</div>
 
-  <script>
-    // small script only for year injection and progressive enhancement (safe)
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<!-- SCREENSHOT -->
+<div class="screenshots">
+  <img src="https://via.placeholder.com/360x640?text=Score808+1" alt="">
+  <img src="https://via.placeholder.com/360x640?text=Score808+2" alt="">
+  <img src="https://via.placeholder.com/360x640?text=Score808+3" alt="">
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+  <div class="card">
+    <h2>Tentang aplikasi ini</h2>
+    <p>
+      Score808 LiveScore merupakan aplikasi informasi sepak bola yang dirancang untuk membantu pengguna memantau perkembangan pertandingan secara real-time. Melalui aplikasi ini, pengguna dapat melihat skor langsung, jadwal pertandingan, serta informasi statistik dasar dari berbagai kompetisi sepak bola. Tampilan yang sederhana dan ringan membuat aplikasi ini nyaman digunakan di berbagai perangkat, baik pada koneksi internet cepat maupun terbatas.
+ </p>
+<p>Aplikasi Score808 LiveScore menghadirkan fitur notifikasi pertandingan yang memungkinkan pengguna mendapatkan pembaruan penting seperti waktu kickoff dan perubahan skor. Dengan sistem pembaruan otomatis, pengguna tidak perlu melakukan penyegaran halaman secara manual. Hal ini membantu memberikan pengalaman penggunaan yang lebih praktis dan efisien bagi penggemar sepak bola yang ingin tetap mengikuti pertandingan favorit mereka.
+ </p>
+<p>Selain fokus pada kecepatan informasi, Score808 LiveScore juga memperhatikan kenyamanan pengguna melalui desain antarmuka yang rapi dan mudah dipahami. Aplikasi ini menyajikan data pertandingan secara terstruktur sehingga memudahkan pengguna dalam mencari jadwal, hasil pertandingan, maupun informasi terkait tim dan liga. Dengan pendekatan ini, Score808 LiveScore dapat menjadi salah satu alternatif aplikasi pemantau skor sepak bola yang informatif dan mudah diakses.
+    </p>
+  </div>
+</div>
+
+<!-- INFO -->
+<div class="section">
+  <div class="info-grid">
+    <div>⚽ Olahraga</div>
+    <div>⬇️ 100K+</div>
+    <div>📦 18 MB</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class="section">
+  <div class="card">
+    <h2>Fitur utama</h2>
+    <ul>
+      <li>Skor pertandingan real-time</li>
+      <li>Notifikasi kickoff & gol</li>
+      <li>Statistik tim dan pemain</li>
+      <li>Mode hemat data</li>
+    </ul>
+  </div>
+</div>
+
+<!-- REQUIREMENT -->
+<div class="section">
+  <div class="card">
+    <h2>Persyaratan</h2>
+    <p>Android 6.0 ke atas · Koneksi internet</p>
+  </div>
+</div>
+
+<div class="footer-space"></div>
+
+<!-- FLOATING CTA ANDROID -->
+<div class="floating-cta">
+  <a class="cta-btn" href="https://news.score808.my.id/p/link.html" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M2 2v20l20-10L2 2z"/>
+    </svg>
+    Score808 (Android)
+  </a>
+</div>
+
 </body>
 </html>
