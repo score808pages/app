@@ -189,6 +189,46 @@ a{text-decoration:none;color:inherit}
 .footer-space{
   height:90px;
 }
+  .sticky_floating_ad {
+  background-color:#ffffffd4;
+  z-index:99;
+  position:fixed;
+  right:0;
+  bottom:0;
+  left:0;
+}
+.sticky_floating_ad .ad_box {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  color:#5f6368;
+  height:100px;
+}
+.sticky_floating_ad .close_ad_button {
+  display:flex;
+  align-items:center;
+  gap:4px;
+  background-color:#878787;
+  border-radius:100px;
+  font-size:12px;
+  font-weight:700;
+  color:#fff;
+  height:24px;
+  max-width:fit-content;
+  cursor:pointer;
+  margin:0 auto;
+  padding:0 4px 0 8px;
+  position:absolute;
+  top:-28px;
+  right:0;
+  left:0;
+}
+.sticky_floating_ad .close_ad_button svg {
+  width:18px;
+  height:18px;
+}
+  
 </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264483052991753" crossorigin="anonymous"></script>
 <script type="application/ld+json">
@@ -287,6 +327,17 @@ a{text-decoration:none;color:inherit}
  </p>
 <p>Aplikasi Score808 LiveScore menghadirkan fitur notifikasi pertandingan yang memungkinkan pengguna mendapatkan pembaruan penting seperti waktu kickoff dan perubahan skor. Dengan sistem pembaruan otomatis, pengguna tidak perlu melakukan penyegaran halaman secara manual. Hal ini membantu memberikan pengalaman penggunaan yang lebih praktis dan efisien bagi penggemar sepak bola yang ingin tetap mengikuti pertandingan favorit mereka.
  </p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264483052991753"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-6264483052991753"
+     data-ad-slot="9045820467"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 <p>Selain fokus pada kecepatan informasi, Score808 LiveScore juga memperhatikan kenyamanan pengguna melalui desain antarmuka yang rapi dan mudah dipahami. Aplikasi ini menyajikan data pertandingan secara terstruktur sehingga memudahkan pengguna dalam mencari jadwal, hasil pertandingan, maupun informasi terkait tim dan liga. Dengan pendekatan ini, Score808 LiveScore dapat menjadi salah satu alternatif aplikasi pemantau skor sepak bola yang informatif dan mudah diakses.
     </p>
   </div>
@@ -321,6 +372,23 @@ a{text-decoration:none;color:inherit}
     <p>Android 6.0 ke atas · Koneksi internet</p>
   </div>
 </div>
+
+<div class="footer-space"></div>
+
+<!-- FLOATING CTA ANDROID -->
+<div class="floating-cta">
+  <a class="cta-btn" href="https://news.score808.my.id/p/link.html" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M2 2v20l20-10L2 2z"/>
+    </svg>
+    Score808 (Android)
+  </a>
+</div>
+<div class="sticky_floating_ad">
+  <div class="container">
+  	<div class="close_ad_button">Close Ads <svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z"></path></svg></div>
+  	<div class="ad_placement">
+  	  <!-- Place your ad here -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264483052991753"
      crossorigin="anonymous"></script>
 <!-- Ads -->
@@ -333,17 +401,22 @@ a{text-decoration:none;color:inherit}
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<div class="footer-space"></div>
 
-<!-- FLOATING CTA ANDROID -->
-<div class="floating-cta">
-  <a class="cta-btn" href="https://news.score808.my.id/p/link.html" target="_blank">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M2 2v20l20-10L2 2z"/>
-    </svg>
-    Score808 (Android)
-  </a>
+  	</div>
+  </div>
 </div>
+  <script>
+//<![CDATA[
+document.addEventListener("click", function(event) {
+  const closeAdButton = event.target.closest(".sticky_floating_ad .close_ad_button");
+  if (!closeAdButton) return;
 
+  const floatingAdContainer = document.querySelector(".sticky_floating_ad");
+  if (floatingAdContainer) {
+    floatingAdContainer.classList.add("hidden");
+  }
+});
+//]]>
+</script>
 </body>
 </html>
