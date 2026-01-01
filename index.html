@@ -1,49 +1,61 @@
 <!doctype html>
 <html lang="id">
 <head>
-<!-- ================= BASIC ================= -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Meta Basic -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <meta name="theme-color" content="#0f172a" />
 
-<title>Score808 LiveScore App — Jadwal Bola & Skor Langsung</title>
-<meta name="description" content="Score808 LiveScore App menghadirkan skor langsung, jadwal pertandingan sepak bola hari ini, statistik lengkap, dan notifikasi real-time. Cepat, ringan, dan gratis.">
+  <title>Score808 LiveScore App — Skor Langsung, Jadwal & Cuplikan Pertandingan</title>
 
-<link rel="canonical" href="https://app.score808.my.id/">
+  <meta name="description" content="Download aplikasi Score808 LiveScore untuk skor langsung, jadwal pertandingan, hasil terbaru, statistik, dan notifikasi real-time. Ringan, cepat, aman, dan bebas gangguan." />
 
-<!-- ================= ROBOTS ================= -->
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://app.score808.my.id/" />
+  <meta name="robots" content="index, follow" />
 
-<!-- ================= THEME ================= -->
-<meta name="theme-color" content="#0f172a">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- SEO Enhancement -->
+  <meta name="keywords" content="score808, livescore app, download score808, skor langsung hari ini, livescore apk, jadwal bola, aplikasi skor bola, live score app" />
+  <meta name="author" content="Score808 Team" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="id" />
+  <meta name="distribution" content="global" />
+  <meta name="coverage" content="worldwide" />
 
-<!-- ================= PERFORMANCE ================= -->
-<link rel="preconnect" href="https://blogger.googleusercontent.com">
-<link rel="dns-prefetch" href="//blogger.googleusercontent.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Download Score808 LiveScore App — Skor Langsung & Jadwal Pertandingan" />
+  <meta property="og:description" content="Dapatkan skor langsung, jadwal bola, statistik, dan notifikasi pertandingan dalam satu aplikasi ringan dan cepat." />
+  <meta property="og:url" content="https://app.score808.my.id/" />
+  <meta property="og:site_name" content="Score808 LiveScore" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUIo1zWVJEpFrPpyy5rqH522v1F4FjGTTkFcX5h2BwMBQ1P7szB3YxrwoUCcUvmJKjnJl_xulFSNs-SBzSYcpoM3d-EohjORzZZpt91NIFRK21R6Tc-fp-0q_prLauW3Rd3pInbO8j3Ug7EzVyHsFEfOfcfOxOgm6FwBFd27FEJnQUSv1ndEVLjnCayg/s1600/score808indonesia.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Score808 LiveScore App" />
 
-<!-- ================= FAVICON ================= -->
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/score808pages/app@main/favicon.ico">
-<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/score808pages/app@main/favicon.ico">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Download Score808 LiveScore App — Skor Langsung & Jadwal Pertandingan" />
+  <meta name="twitter:description" content="Aplikasi skor langsung paling cepat dan ringan. Pantau setiap pertandingan tanpa delay." />
+  <meta name="twitter:image"content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUIo1zWVJEpFrPpyy5rqH522v1F4FjGTTkFcX5h2BwMBQ1P7szB3YxrwoUCcUvmJKjnJl_xulFSNs-SBzSYcpoM3d-EohjORzZZpt91NIFRK21R6Tc-fp-0q_prLauW3Rd3pInbO8j3Ug7EzVyHsFEfOfcfOxOgm6FwBFd27FEJnQUSv1ndEVLjnCayg/s1600/score808indonesia.png" />
+  <meta name="twitter:site" content="@Livescore808" />
 
-<!-- ================= OPEN GRAPH ================= -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Score808 LiveScore App">
-<meta property="og:title" content="Score808 LiveScore App — Skor Langsung & Jadwal Bola">
-<meta property="og:description" content="Pantau skor langsung, jadwal pertandingan, dan statistik sepak bola secara real-time dengan Score808 LiveScore App.">
-<meta property="og:url" content="https://app.score808.my.id/">
-<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgec7QlXjQjLnH_IxsEf418DOOyWRTQKUFX2EL62Ul_n7XBZkgo7GwwV69RtX4SxWmUJ2f95je4kPzOD8y7UTvDUcAKIO0xpk6MYEkhE7ohIn84vda4WPCaZ7_iwxnVhbrf8-SIg-G_Q7O0U467TmEnG0mRN4Pr4PA9bAinAXRryJf8_SUEJmrSiZcfzQA/s1200/score808%20app.png">
+  <!-- PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/score808pages/app@main/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/score808pages/app@main/favicon.ico" />
 
-<!-- ================= TWITTER ================= -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Score808 LiveScore App">
-<meta name="twitter:description" content="Aplikasi skor langsung dengan jadwal bola, statistik, dan notifikasi real-time.">
-<meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgec7QlXjQjLnH_IxsEf418DOOyWRTQKUFX2EL62Ul_n7XBZkgo7GwwV69RtX4SxWmUJ2f95je4kPzOD8y7UTvDUcAKIO0xpk6MYEkhE7ohIn84vda4WPCaZ7_iwxnVhbrf8-SIg-G_Q7O0U467TmEnG0mRN4Pr4PA9bAinAXRryJf8_SUEJmrSiZcfzQA/s1200/score808%20app.png">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Performance -->
+  <link rel="preconnect" href="https://app.score808.my.id" />
+  <link rel="dns-prefetch" href="https://app.score808.my.id" />
+
+  <!-- Security -->
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <meta name="yandex-verification" content="866d754b01fbe97f" />
+  
 <!-- ================= SCHEMA (RICH RESULTS) ================= -->
 
 <!-- ✅ FAQPage (RICH SNIPPET AKTIF) -->
@@ -113,7 +125,6 @@
 </script>
 
 <!-- ================= ADS ================= -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264483052991753" crossorigin="anonymous"></script>
 
 <style>
 :root{
@@ -292,7 +303,6 @@ a{text-decoration:none;color:inherit}
 </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6264483052991753" crossorigin="anonymous"></script>
 </head>
-
 <body>
 
 <!-- HEADER -->
